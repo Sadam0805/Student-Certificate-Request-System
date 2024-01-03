@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bonafide Certificate</title>
+  <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+  <link rel="stylesheet" href="./static/css/back.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bonafide Certificate</h1>
+    <form name="Bonafide" value="Bonafide" action="https://script.google.com/macros/s/AKfycbzQzfGTg1EyDSXuL6fHwjqRFgEe4wOoYk0vJ_tmi_iA00qLUAdbtmy32ghQjbkcDqzU/exec" method="post">
+      <input type="hidden" name="form_type" value="bonafide">
+
+      <label for="rollno">Roll No</label>
+      <select id="rollno" name="rollno" required>
+        <!-- JavaScript will populate options dynamically -->
+      </select>
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="fathername">Father's Name</label>
+      <input type="text" id="fathername" name="fathername" required>
+
+      <label for="class">Class</label>
+      <select id="class" name="department" required>
+        <option value="I MSC">I MSC</option>
+        <option value="II MSC">II MSC</option>
+      </select>
+
+      <label for="medium">Medium</label>
+      <select id="medium" name="medium" required>
+        <option value="English">English</option>
+        <option value="Tamil">Tamil</option>
+      </select>
+
+      <label for="course">Course</label>
+      <select id="course" name="course" required>
+        <option value="Computer Science">Computer Science</option>
+      </select>
+
+      <label for="academic_year">Academic Year</label>
+      <select id="academic_year" name="academic_year" required>
+        <!-- JavaScript will populate options dynamically -->
+      </select>
+
+      <label for="purpose">Purpose</label>
+      <input type="text" id="purpose" name="purpose" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <button type="submit" name="button">Submit</button>
+    </form>
+  </div>
+
+  <a href="javascript:history.back()" class="go-back-button">Go Back</a>
+
+  <script>
+    // Dynamically populate the Roll No dropdown
+    const rollnoDropdown = document.getElementById("rollno");
+
+    for (let i = 1; i <= 27; i++) {
+      const rollNoValue = `32122P150${i.toString().padStart(2, '0')}`;
+      const option = document.createElement("option");
+      option.value = rollNoValue;
+      option.text = rollNoValue;
+      rollnoDropdown.appendChild(option);
+    }
+
+    // Dynamically populate the Academic Year dropdown in reverse order
+    const academicYearDropdown = document.getElementById("academic_year");
+    const currentYear = new Date().getFullYear();
+
+    for (let i = currentYear; i >= currentYear - 10; i--) {
+      const academicYear = `${i}-${i + 1}`;
+      const option = document.createElement("option");
+      option.value = academicYear;
+      option.text = academicYear;
+      academicYearDropdown.appendChild(option);
+    }
+
+  </script>
+</body>
+
+</html>

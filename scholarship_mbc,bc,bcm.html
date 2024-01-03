@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Application Form</title>
+    <link rel="stylesheet" href="./static/css/back.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            font-size: 24px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+        }
+
+        input[type="email"] {
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #5586bb;
+            color: #fff;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Fieldset Styles */
+        .fieldset {
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Additional Styles */
+        #yearInput,
+        #otherOccupation {
+            display: none;
+        }
+
+        /* Creative Styles */
+        select,
+        input[type="text"],
+        input[type="date"] {
+            background-color: #f9f9f9;
+            color: #333;
+            border: 2px solid #007bff;
+            border-radius: 6px;
+            padding: 10px;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus,
+        select:focus,
+        input[type="date"]:focus {
+            outline: none;
+            border-color: #0056b3;
+        }
+
+        .fieldset:hover {
+            background-color: #e0e0e0;
+        }
+
+        button[type="submit"] {
+            background-color: #009688;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #007d6b;
+        }
+
+    </style>
+</head>
+<body>
+
+    <form action="https://script.google.com/macros/s/AKfycbzQzfGTg1EyDSXuL6fHwjqRFgEe4wOoYk0vJ_tmi_iA00qLUAdbtmy32ghQjbkcDqzU/exec" method="post">
+        <input type="hidden" name="form_type" value="scholarship_mbc,bc,bcm">
+
+        <h1>Scholarship Form for (MBC, BC, BCM)</h1>
+<!------------------------------------------------  -->
+        <fieldset class="fieldset">
+            <h2>Scholarship Pending</h2>
+            <label for="scholarship_pending">Scholarship Pending:</label>
+            <select id="scholarship_pending" name="scholarship_pending" onchange="toggleYearInput()" required>
+                <option value="Yes">Yes</option>
+                <option value="No" selected>No</option>
+            </select>
+
+            <div id="yearInput" style="display: none;">
+                <label for="pending_year">Year (If Yes, mention the year):</label>
+                <select id="pending_year" name="pending_year">
+                    <option value="-" selected>-</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        </fieldset>
+<!-- ----------------------------------------------------- -->
+        <fieldset class="fieldset">
+            <h2>Scholarship Details</h2>
+            <label for="scholarship_type">Scholarship:</label>
+            <select id="scholarship_type" name="scholarship_type" required>
+                <option value="Fresh">Fresh</option>
+                <option value="Renewal">Renewal</option>
+            </select>
+            
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree" required>
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+                <option value="M.Phil">M.Phil</option>
+            </select>
+            
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="COMPUTER SCIENCE">COMPUTER SCIENCE</option>
+                <!-- Add more department options as needed -->
+            </select>
+            
+            <label for="medium">Medium:</label>
+            <select id="medium" name="medium" required>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+            
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+                <option value="I">I</option>
+                <option value="II">II</option>
+                <option value="III">III</option>
+                <!-- Add more year options as needed -->
+            </select>
+            
+            <label for="shift">Shift:</label>
+            <select id="shift" name="shift" required>
+                <option value="I">I</option>
+                <option value="II">II</option>
+            </select>
+            
+            <label for="admission_date">Date of Admission:</label>
+            <input type="date" id="admission_date" name="admission_date" required>
+
+            <label for="fee_receipt_no">Fee Receipt No:</label>
+            <input type="text" id="fee_receipt_no" name="fee_receipt_no" required>
+        </fieldset>
+<!-- ---------------------------------------------------------------------------- -->
+
+        <fieldset class="fieldset">    
+            <h2>Personal Details</h2>
+            <label for="register_no">Register No:</label>
+            <input type="text" id="register_no" name="register_no" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="tamil_name">மாணவர் பெயர்:</label>
+            <input type="text" id="tamil_name" name="tamil_name" required>
+
+            <label for="father_name">Father Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="tamil_father_name">தந்தை பெயர்:</label>
+            <input type="text" id="tamil_father_name" name="tamil_father_name" required>
+
+            <label for="mother_name">Mother Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+
+            <label for="tamil_mother_name">தாயார் பெயர்:</label>
+            <input type="text" id="tamil_mother_name" name="tamil_mother_name" required>
+
+            <label for="occupation">Occupation:</label>
+            <select id="occupation" name="occupation" onchange="checkOccupation()" required>
+                <option value="Central Govt (or) Retired">Central Govt (or) Retired</option>
+                <option value="State Govt (or) Retired">State Govt (or) Retired</option>
+                <option value="Private / Agriculture (owned)">Private / Agriculture (owned)</option>
+                <option value="Agriculture (coolie)">Agriculture (coolie)</option>
+                <option value="Daily Wages">Daily Wages</option>
+                <option value="Others">Others</option>
+            </select>
+            
+            <div id="otherOccupation" style="display: none;">
+                <label for="custom_occupation">Custom Occupation:</label>
+                <input type="text" id="custom_occupation" name="custom_occupation">
+            </div>
+
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="community">Community:</label>
+            <select id="community" name="community" required>
+                <option value="MBC">MBC</option>
+                <option value="BC">BC</option>
+                <option value="BCM">BCM</option>
+            </select>
+
+            <label for="caste">Caste:</label>
+            <input type="text" id="caste" name="caste">
+
+            <label for="disabilities">Disabilities (if yes):</label>
+            <select id="disabilities" name="disabilities" required>
+                <option value="NO" selected>NO</option>
+                <option value="LD">LD</option>
+                <option value="VI">VI</option>
+                <option value="LV">LV</option>
+                <option value="HI">HI</option>
+                <option value="MD">MD</option>
+            </select>
+            
+            <label for="mobile1">Mobile No 1:</label>
+            <input type="text" id="mobile1" name="mobile1" required>
+
+            <label for="mobile2">Mobile No 2:</label>
+            <input type="text" id="mobile2" name="mobile2">
+
+            <label for="annual_income">Annual Income (Rs.):</label>
+            <input type="text" id="annual_income" name="annual_income" required>
+
+            
+            <label for="aadhaar_no">Aadhaar No:</label>
+            <input type="text" id="aadhaar_no" name="aadhaar_no" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+   <!-- ----------------------------------------------------------------- -->
+
+        <fieldset class="fieldset">
+            <h2>School Details</h2>
+            <label for="emis_no">EMIS No:</label>
+            <input type="text" id="emis_no" name="emis_no" required>
+
+            <label for="sslc_reg_no">SSLC REG.NO:</label>
+            <input type="text" id="sslc_reg_no" name="sslc_reg_no" required>
+
+            <label for="sslc_certi_no">SSLC CERTI.NO:</label>
+            <input type="text" id="sslc_certi_no" name="sslc_certi_no" required>
+
+            <label for="hsc_reg_no">HSC REG.NO:</label>
+            <input type="text" id="hsc_reg_no" name="hsc_reg_no" required>
+
+            <label for="hsc_certi_no">HSC CERTI.NO:</label>
+            <input type="text" id="hsc_certi_no" name="hsc_certi_no" required>
+        </fieldset>
+
+        <!-- --------------------------------------------------------------- -->
+
+        <fieldset class="fieldset">
+            <h2>Bank Details</h2>
+            <label for="bank_name">Bank Name:</label>
+            <input type="text" id="bank_name" name="bank_name" required>
+
+            <label for="branch_name">Branch Name:</label>
+            <input type="text" id="branch_name" name="branch_name" required>
+
+            <label for="bank_account_no">Bank a/c No:</label>
+            <input type="text" id="bank_account_no" name="bank_account_no" required>
+
+            <label for="ifsc_code">IFSC Code:</label>
+            <input type="text" id="ifsc_code" name="ifsc_code" required>
+
+            <label for="micr_code">MICR Code:</label>
+            <input type="text" id="micr_code" name="micr_code" required>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <a href="javascript:history.back()" class="go-back-button">Go Back</a>
+
+    <!-- This is for the scholarship pending -->
+    <script>
+        function toggleYearInput() {
+            var scholarshipPending = document.getElementById("scholarship_pending").value;
+            var yearInput = document.getElementById("yearInput");
+    
+            if (scholarshipPending === "Yes") {
+                yearInput.style.display = "block";
+            } else {
+                yearInput.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- This is for if the user choose others in occupation show them an input type text to fill -->
+    <script>
+        function checkOccupation() {
+            var occupationSelect = document.getElementById("occupation");
+            var customOccupationDiv = document.getElementById("otherOccupation");
+            var customOccupationInput = document.getElementById("custom_occupation");
+
+            if (occupationSelect.value === "Others") {
+                customOccupationDiv.style.display = "block";
+                customOccupationInput.setAttribute("required", "required");
+            } else {
+                customOccupationDiv.style.display = "none";
+                customOccupationInput.removeAttribute("required");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+
+        body {
+            background-color: aquamarine;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .content-left,
+        .content-mid,
+        .content-right {
+            align-items: center;
+            gap: 20px;
+            background-color: #f9f9f9;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 25%;
+            height: 350px;
+            margin: 5px;
+        }
+
+        .content-mid {    
+            height: auto;
+        }
+
+        /* Style for the navigation bar */
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+        }
+
+        li.nav-item {
+            float: right;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 60px;
+            text-decoration: none;
+        }
+
+        li.nav-item a:hover {
+            background-color: #555;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        /* Style the container div */
+        .text {
+            font-family: Arial, sans-serif; /* Choose a readable font */
+            background-color: #f9f9f9; /* Background color for the container */
+            padding: 20px; /* Add some padding for spacing */
+            border-radius: 10px; /* Rounded corners for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+            max-width: 800px; /* Limit the width for readability */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        /* Style the paragraph text inside the container */
+        .text p {
+            font-size: 18px; /* Adjust the font size to your preference */
+            line-height: 1.5; /* Improve readability with line spacing */
+            color: #333; /* Choose a dark text color */
+        }
+
+        /* Add some visual emphasis to certain words */
+        .text p strong {
+            color: #007bff; /* Change color for strong elements (e.g., "prestigious") */
+            font-weight: bold; /* Make strong elements bold */
+        }
+
+        /* Style the categories (e.g., MBC, BC, BCM, SC, SCA, ST) */
+        .text p em {
+            font-style: italic; /* Make categories italic */
+            color: #ff5722; /* Choose a distinctive color for categories */
+        }
+
+        /* Add spacing between categories for better readability */
+        .text p em::after {
+            content: ", "; /* Add a comma and space after each category */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .outer {
+            border: 2px;
+            border-color: lightblue;
+            padding: 5px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin: 10px -10px -10px;
+            text-align: center;
+            /* position: relative;
+            left: 0px;
+            right: 0px;
+            bottom: 0px; */
+        }
+
+        .project-author {
+            font-size: 14px;
+            display: inline-block;
+            width: 43%;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li class="nav-item"><a href="scholarship_sc,st,sca.html">Scholarship(SC,SCA,ST)</a></li>
+        <li class="nav-item"><a href="scholarship_mbc,bc,bcm.html">Scholarship(MBC,BC,BCM)</a></li>
+        <li class="nav-item"><a href="no_due.html">No Due</a></li>
+        <li class="nav-item"><a href="buspass.html">Bus Pass</a></li>
+        <li class="nav-item"><a href="bonafide.html">Bonafide</a></li>
+        <li class="nav-item"><a href="attendance.html">Attendance</a></li>
+    </ul>
+
+    <!-- Your page content goes here -->
+    <header>
+        <h1>MUTHURANGAM GOVERNMENT ARTS COLLEGE (AUTONOMOUS)</h1>
+        <h1>Student Certificate Request System</h1>
+        <h3>Welcome to our College Student Certificate Request System!</h3> 
+    </header>
+    
+    <div class="outer">
+       
+        <div class="text">
+            <!-- <p>Here, you can easily request and receive certificates such as Bonafide Certificates, Attendance Certificates, No-Due Certificates,  Busspass Certificates, Scholarship certificates for (MBC, BC, BCM), and Scholarship certificates for (SC, SCA, ST) from Muthurangam Government Arts College.</p> -->
+            <p>Unlock a world of convenience at Muthurangam Government Arts College. Seamlessly request and effortlessly receive a variety of certificates that reflect your academic journey and achievements. Whether it's the official Bonafide Certificates, the proof of your dedicated attendance, the liberating No-Due Certificates, the essential Bus Pass Certificates, or the <strong>prestigious</strong> Scholarship Certificates tailored for the forward-looking <em>(MBC, BC, BCM)</em> and the trailblazing <em>(SC, SCA, ST)</em> students. Your success story deserves recognition, and we're here to make it extraordinary.</p>
+        </div>
+        
+        
+        <h2>How It Works</h2>
+        <div class="container">
+        
+            <div class="content-left">
+                <h3>Fill out the form with your details.</h3>
+                <img src="./static/images/ss2.png" alt="Image 1">
+            </div>
+            
+            <div class="content-mid">
+                <h3>Click submit to send your request.</h3>
+                <img src="./static/images/s1.png" alt="Image 2">
+            </div>
+            
+            <div class="content-right">
+                <h3>Wait for an email with your certificate attached.</h3>
+                <img src="./static/images/m2.png" alt="Image 3">
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="project-author">Title: Student Certificate Request System</div>
+            <div class="project-author">
+                Presented By: M. Sadam Hussain, MSC COMPUTER SCIENCE
+            </div>
+        </div>
+    </footer>
+      
+</body>
+</html>
+
+
+
+

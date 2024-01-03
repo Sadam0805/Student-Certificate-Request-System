@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NO DUE Certificate</title>
+    <link rel="stylesheet" href="./static/css/back.css">
+    <style>
+        body {
+            background-color: #ffe4b5; /* Background color */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 30%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold; /* Added font weight */
+            font-style: italic; /* Added font style */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 12px;
+            color: #555;
+            font-weight: bold; /* Added font weight */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #1e90ff;
+            border-radius: 8px;
+            font-size: 18px;
+            color: #555;
+            transition: border-color 0.3s ease;
+            font-weight: normal; /* Reset font weight */
+            font-style: normal; /* Reset font style */
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #ff5733; /* Highlight color on focus */
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #ff5733; /* Button background color */
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease;
+            font-weight: bold; /* Added font weight */
+            font-style: italic; /* Added font style */
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #ff4500; /* Button background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>NO DUE FORM</h1>
+        <form name="No Due" action="https://script.google.com/macros/s/AKfycbzQzfGTg1EyDSXuL6fHwjqRFgEe4wOoYk0vJ_tmi_iA00qLUAdbtmy32ghQjbkcDqzU/exec" method="POST">
+            <input type="hidden" name="form_type" value="No Due">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="class">Class:</label>
+            <select id="class" name="class">
+                <option value="I MSC">I MSC</option>
+                <option value="II MSC">II MSC</option>
+            </select>
+
+            <label for="medium">Medium:</label>
+            <select id="medium" name="medium">
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+
+            <label for="shift">Shift No:</label>
+            <select id="shift" name="shift">
+                <option value="I Shift">I Shift</option>
+                <option value="II Shift">II Shift</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </form>
+    </div>
+
+    <a href="javascript:history.back()" class="go-back-button">Go Back</a>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buspass Certificate</title>
+    <link rel="stylesheet" href="./static/css/back.css">
+    <style>
+    /* styles.css */
+
+        body {
+            background: linear-gradient(45deg, #E03A3A, #FFD700);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            margin: 30px auto; /* Center the form horizontally */
+            text-align: center;
+        }
+
+        h1 {
+            color: #FFD700;
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        fieldset {
+            border: 2px solid #FFD700;
+            border-radius: 6px;
+            margin: 15px 0;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #FFD700;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            padding-right: 5px; /* Add padding on the right side */
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            padding-right: 5px; /* Add padding on the right side */
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+            background-color: #fff; /* Ensure a white background for select elements */
+        }
+
+        input[type="submit"] {
+            background-color: #FFD700;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #FFC100;
+        }
+
+        p {
+            font-style: italic;
+            color: #555;
+            font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="form-container">
+        <h1>Buspass Certificate</h1>
+        <form name="Buspass" action="https://script.google.com/macros/s/AKfycbzQzfGTg1EyDSXuL6fHwjqRFgEe4wOoYk0vJ_tmi_iA00qLUAdbtmy32ghQjbkcDqzU/exec" method="post">
+            <input type="hidden" name="form_type" value="buspass">
+            
+            <fieldset>
+                <legend>Student Information</legend>
+                <label for="studentName">STUDENT'S NAME:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Your Name"><br><br>
+
+                <label for="class">CLASS:</label>
+                <select id="class" name="class" placeholder="Class">
+                    <option value="I MSC">I MSC</option>
+                    <option value="II MSC">II MSC</option>
+                </select><br><br>
+
+                <label for="section">Department:</label>
+                <select id="section" name="section">
+                    <option value="Computer Science">Computer Science</option>
+                </select><br><br>
+
+                <legend>Residential Address</legend>
+                <label for="streetAddress">DOOR NO, STREET NAME:</label>
+                <input type="text" id="streetAddress" name="streetAddress" placeholder="Your Street Address"><br><br>
+
+                <label for="village">TOWN/VILLAGE:</label>
+                <input type="text" id="village" name="village" placeholder="Your Village/Area"><br><br>
+
+                <label for="cityPincode">CITY PINCODE:</label>
+                <input type="text" id="cityPincode" name="cityPincode" placeholder="Your City Pincode"><br><br>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Journey Information</legend>
+                <label for="startingBusStop">JOURNEY FROM:</label>
+                <input type="text" id="startingBusStop" name="startingBusStop" placeholder="Starting Bus Stop"><br><br>
+
+                <label for="endingBusStop">TO:</label>
+                <input type="text" id="endingBusStop" name="endingBusStop" placeholder="Ending Bus Stop"><br><br>
+
+                <p>(Near Bus Stop)</p>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <a href="javascript:history.back()" class="go-back-button">Go Back</a>
+
+</body>
+</html>

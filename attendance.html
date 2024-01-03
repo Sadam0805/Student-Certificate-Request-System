@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Certificate</title>
+    <link rel="stylesheet" href="./static/css/back.css">
+    <style>
+        /* styles.css */
+
+        body {
+        background: linear-gradient(45deg, #4CAF50, #2196F3);
+        color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        }
+
+        .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        text-align: center;
+        }
+
+        h2 {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 20px;
+        }
+
+        form {
+        padding: 20px;
+        }
+
+        label {
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        select {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: none;
+        border-bottom: 2px solid #4CAF50;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+        transition: border-bottom 0.3s, transform 0.2s ease-in-out;
+        }
+
+        select {
+        appearance: none;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6"><polygon points="6 0 0 6 12 6" fill="#4CAF50"/></svg>') no-repeat right;
+        background-size: 10px;
+        }
+
+        input[type="submit"] {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+        background-color: #45a049;
+        }
+
+        /* Style the purpose input separately */
+        #purpose {
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 16px;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: border 0.3s, transform 0.2s ease-in-out;
+        }
+
+        #purpose:focus {
+        border: 2px solid #45a049;
+        outline: none;
+        transform: scale(1.02);
+        }
+
+        /* Style the date input separately */
+        #date {
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+        padding: 12px;
+        font-size: 16px;
+        color: #333;
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: border 0.3s, transform 0.2s ease-in-out;
+        }
+
+        #date:focus {
+        border: 2px solid #45a049;
+        outline: none;
+        transform: scale(1.02);
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Attendance Certificate</h2>
+        <form name="Attendance" action="https://script.google.com/macros/s/AKfycbzQzfGTg1EyDSXuL6fHwjqRFgEe4wOoYk0vJ_tmi_iA00qLUAdbtmy32ghQjbkcDqzU/exec" method="post">
+            <input type="hidden" name="form_type" value="attendance">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="roll_no">Roll No:</label>
+            <select id="roll_no" name="roll_no" required>
+                <option value="32122P15001">32122P15001</option>
+                <option value="32122P15002">32122P15002</option>
+                <option value="32122P15003">32122P15003</option>
+                <option value="32122P15004">32122P15004</option>
+                <option value="32122P15005">32122P15005</option>
+                <option value="32122P15006">32122P15006</option>
+                <option value="32122P15007">32122P15007</option>
+                <option value="32122P15008">32122P15008</option>
+                <option value="32122P15009">32122P15009</option>
+                <option value="32122P15010">32122P15010</option>
+                <option value="32122P15011">32122P15011</option>
+                <option value="32122P15012">32122P15012</option>
+                <option value="32122P15013">32122P15013</option>
+                <option value="32122P15014">32122P15014</option>
+                <option value="32122P15015">32122P15015</option>
+                <option value="32122P15016">32122P15016</option>
+                <option value="32122P15017">32122P15017</option>
+                <option value="32122P15018">32122P15018</option>
+                <option value="32122P15019">32122P15019</option>
+                <option value="32122P15020">32122P15020</option>
+                <option value="32122P15021">32122P15021</option>
+                <option value="32122P15022">32122P15022</option>
+                <option value="32122P15023">32122P15023</option>
+                <option value="32122P15024">32122P15024</option>
+                <option value="32122P15025">32122P15025</option>
+                <option value="32122P15026">32122P15026</option>
+                <option value="32122P15027">32122P15027</option>
+            </select>
+
+            <label for="department">Class/Department:</label>
+            <select id="department" name="department" required>
+                <option value="I MSC">I MSC</option>
+                <option value="II MSC">II MSC</option>
+            </select>
+
+            <label for="medium">Medium of Instruction:</label>
+            <select id="medium" name="medium" required>
+                <option value="English">English</option>
+                <option value="Tamil">Tamil</option>
+            </select>
+
+            <label for="academic_year">Academic Year(s):</label>
+            <select id="academic_year" name="academic_year" required>
+                <option value="2023-2024">2023-2024</option>
+                <option value="2022-2023">2022-2023</option>
+                <option value="2021-2022">2021-2022</option>
+                <option value="2020-2021">2020-2021</option>
+                <option value="2019-2020">2019-2020</option>
+                <option value="2018-2019">2018-2019</option>
+                <option value="2017-2018">2017-2018</option>
+                <option value="2016-2017">2016-2017</option>
+                <option value="2015-2016">2015-2016</option>
+                <option value="2014-2015">2014-2015</option>
+            </select>
+
+            <label for="purpose">Purpose:</label>
+            <input type="text" id="purpose" name="purpose" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <a href="javascript:history.back()" class="go-back-button">Go Back</a>
+
+</body>
+
+</html>
